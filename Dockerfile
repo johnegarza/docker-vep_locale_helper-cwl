@@ -16,3 +16,5 @@ RUN echo "America/Chicago" > /etc/timezone
 RUN dpkg-reconfigure --frontend noninteractive tzdata
 
 USER vep
+
+RUN ln -s /opt/vep/ensembl-vep/vep /usr/bin/variant_effect_predictor.pl
